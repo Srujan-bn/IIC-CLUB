@@ -207,25 +207,28 @@ header .cta-btn:hover {
 .about {
   text-align: center;
   padding: 100px 20px;
-  background-color: #f4f7fc; /* Soft background to make the section feel spacious */
+  background: linear-gradient(135deg, #0073e6, #ffbf00); /* Vibrant gradient background */
+  color: white; /* Ensure text contrast */
   animation: fadeInUp 1s ease-out; /* Smooth fade-in effect */
   position: relative;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3); /* Inset shadow for depth */
 }
 
 .about h2 {
   font-size: 3rem;
-  color: #0073e6;
+  color: #fff;
   margin-bottom: 30px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   opacity: 0;
   animation: fadeIn 1s ease-out forwards 0.2s; /* Text fade-in effect */
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Subtle text shadow for readability */
 }
 
 .about p {
   font-size: 1.2rem;
-  color: #666;
+  color: #f4f7fc;
   margin-bottom: 40px;
   line-height: 1.8;
   font-weight: 400;
@@ -234,6 +237,7 @@ header .cta-btn:hover {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); /* Enhance text visibility */
 }
 
 .about .cta-btn {
@@ -247,6 +251,7 @@ header .cta-btn:hover {
   position: relative;
   transition: transform 0.4s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
+  overflow: hidden;
 }
 
 .about .cta-btn::before {
@@ -256,7 +261,7 @@ header .cta-btn:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ffbf00;
+  background: linear-gradient(135deg, #ffbf00, #0073e6); /* Gradient hover effect */
   border-radius: 50px;
   z-index: -1;
   transition: all 0.3s ease;
@@ -268,6 +273,7 @@ header .cta-btn:hover {
   background-color: #ffbf00;
   transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  color: #fff;
 }
 
 .about .cta-btn:hover::before {
@@ -299,37 +305,40 @@ header .cta-btn:hover {
 /* Events Section Styling */
 .events {
   padding: 100px 20px;
-  background-color: #f9f9f9;
-  text-align: center; /* Center-align content */
+  background: linear-gradient(135deg, #0073e6, #ffbf00); /* Vibrant gradient background */
+  color: white;
+  text-align: center;
   animation: fadeInUp 1s ease-out; /* Fade-in animation */
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3); /* Inset shadow for depth */
 }
 
 .events h2 {
   font-size: 3rem;
-  color: #0073e6;
+  color: #fff;
   margin-bottom: 30px;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Add subtle text shadow */
 }
 
 .event-list {
   display: flex;
   gap: 30px;
-  overflow-x: auto;
+  overflow-x: auto; /* Horizontal scrolling for small screens */
   padding: 20px 0;
   justify-content: center; /* Center align the list */
 }
 
 .event-box {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border: none; /* Removed solid border */
   padding: 30px;
   width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
   transform: translateY(20px); /* Initial position for animation */
@@ -338,15 +347,16 @@ header .cta-btn:hover {
 
 .event-box:hover {
   transform: translateY(-10px) scale(1.05); /* Hover effect with scale */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
-  background-color: #f0f8ff; /* Light background change on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  background: linear-gradient(135deg, #ffbf00, #0073e6); /* Gradient background on hover */
+  color: white; /* Ensure text contrast on hover */
 }
 
 .event-box h3 {
   font-size: 1.6rem;
   color: #0073e6;
   margin-bottom: 15px;
-  font-weight: 600;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
@@ -355,10 +365,10 @@ header .cta-btn:hover {
 }
 
 .event-box p {
-  color: #666;
+  color: #444;
   margin-bottom: 15px;
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   transition: color 0.3s ease;
 }
 
@@ -413,19 +423,22 @@ header .cta-btn:hover {
 /* Team Section Styling */
 .team {
   padding: 100px 20px;
-  background-color: #f8f8f8; /* Subtle background color for the section */
+  background: linear-gradient(135deg, #0073e6, #ffbf00); /* Gradient background */
+  color: white;
   text-align: center;
   animation: fadeInUp 1s ease-out; /* Fade-in animation for the section */
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3); /* Inset shadow for depth */
 }
 
 .team h2 {
   font-size: 3rem;
-  color: #0073e6;
+  color: #fff;
   margin-bottom: 40px;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   animation: slideIn 1s ease-out forwards; /* Slide-in animation for the heading */
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Add subtle text shadow */
 }
 
 .team-members {
@@ -437,13 +450,13 @@ header .cta-btn:hover {
 }
 
 .team-member-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent card background */
+  border: none; /* Removed solid border */
   padding: 25px;
   width: 280px;
-  border-radius: 12px;
+  border-radius: 15px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
   transform: translateY(20px); /* Initial position for animation */
@@ -452,8 +465,9 @@ header .cta-btn:hover {
 
 .team-member-card:hover {
   transform: translateY(-10px) scale(1.05); /* Hover effect with scale */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
-  background-color: #f0f8ff; /* Light background change on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  background: linear-gradient(135deg, #ffbf00, #0073e6); /* Gradient background on hover */
+  color: white; /* Ensure text contrast on hover */
 }
 
 .team-member-img {
@@ -463,25 +477,31 @@ header .cta-btn:hover {
   object-fit: cover;
   margin-bottom: 15px;
   border: 4px solid #0073e6; /* Border around the image */
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .team-member-img:hover {
   border-color: #ffbf00; /* Border color change on hover */
+  transform: scale(1.1); /* Subtle scale effect on hover */
 }
 
 .team-member-card h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #0073e6;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.team-member-card h3:hover {
+  color: #ffbf00; /* Heading color change on hover */
 }
 
 .team-member-card p {
-  color: #666;
+  color: #444;
   font-size: 1rem;
   margin-bottom: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
   transition: color 0.3s ease;
 }
 
@@ -515,34 +535,47 @@ header .cta-btn:hover {
 /* Contact Page Styling */
 .contact {
   padding: 80px 20px;
-  background-color: #f4f7fc;
-  animation: fadeInUp 1s ease-out; /* Add fade-in animation */
+  background: linear-gradient(135deg, #0073e6, #ffbf00); /* Gradient background */
+  animation: fadeInUp 1s ease-out; /* Fade-in animation */
   text-align: center; /* Center all text within the section */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3); /* Add an inset shadow */
 }
 
 .contact h2 {
   font-size: 3rem;
-  color: #0073e6;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
   transform: translateY(-20px); /* Initial position for animation */
   animation: slideIn 1s ease-out forwards; /* Slide-in animation */
 }
 
 .contact p {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 1.5rem;
   margin-bottom: 30px;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #f4f4f4;
   opacity: 0;
   animation: fadeIn 1.5s 0.3s forwards; /* Fade-in effect with delay */
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4); /* Add text shadow */
 }
 
 .contact form {
   max-width: 600px;
+  width: 100%;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent form background */
   padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
   transform: translateY(20px); /* Initial position for form */
   animation: fadeInUp 1s ease-out 0.5s forwards; /* Slide-up animation */
 }
@@ -552,21 +585,22 @@ header .cta-btn:hover {
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #ddd;
   font-size: 1rem;
   transition: all 0.3s ease; /* Smooth transition for input elements */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for inputs */
 }
 
 .contact form input:focus,
 .contact form textarea:focus {
   border-color: #0073e6; /* Highlight border on focus */
-  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5); /* Add glow effect */
+  box-shadow: 0 0 8px rgba(0, 115, 230, 0.5); /* Add glow effect */
 }
 
 .contact form button {
   padding: 15px 30px;
-  background-color: #0073e6;
+  background: linear-gradient(135deg, #0073e6, #ffbf00); /* Gradient button background */
   color: #fff;
   border: none;
   border-radius: 30px;
@@ -574,12 +608,14 @@ header .cta-btn:hover {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow to button */
 }
 
 .contact form button:hover {
-  background-color: #ffbf00;
+  background: linear-gradient(135deg, #ffbf00, #0073e6); /* Reverse gradient on hover */
   transform: translateY(-5px); /* Button hover animation */
 }
+
 
 /* Footer Styling */
 footer {

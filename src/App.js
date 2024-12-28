@@ -15,7 +15,7 @@ const App = () => {
         <header className="header">
   <nav className="navbar">
     <div className="logo">
-      <img src="IIC-logo (1).jpe" alt="IIC Logo" className="logo-image" />
+      <img src="IIC-logo (1).jpeg" alt="IIC Logo" className="logo-image" />
       <h1>Institution's Innovation Council</h1>
     </div>
     <ul className="nav-links">

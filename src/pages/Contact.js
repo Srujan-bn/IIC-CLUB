@@ -13,7 +13,7 @@ const Contact = () => {
 
       <h3>Contact Details</h3>
       <p>Email: <a href="mailto:iic@example.com">iic@example.com</a></p>
-      <p>Phone: +91 9876543210</p>
+      <p>Phone: +91 79 7557 1479</p>
 
       <h3>Follow Us</h3>
       <p>Stay connected with us on our social media channels:</p>

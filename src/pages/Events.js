@@ -8,23 +8,12 @@ const Events = () => {
 
       <div className="event-list">
         <div className="event-box">
-          <h3>Innovation Workshop</h3>
-          <p>March 10, 2024</p>
-          <p>A hands-on workshop to foster innovative thinking and problem-solving.</p>
-          <a href="https://example.com" target="_blank" rel="noopener noreferrer">See More</a>
+          <h3>Recruitments</h3>
+          <p>January 02 and 03 2025</p>
+          <p>Join the Institution's Innovation Council to unlock your creativity, collaborate on groundbreaking ideas, and drive innovation that makes a difference!</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPuBdN4s5mInDoZ1HwxE8qG_S2_iVyl1NvMV1BNyCdCAriWA/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">See More</a>
         </div>
-        <div className="event-box">
-          <h3>Hackathon 2024</h3>
-          <p>April 5-7, 2024</p>
-          <p>A 48-hour event where participants create groundbreaking solutions to real-world problems.</p>
-          <a href="https://example.com" target="_blank" rel="noopener noreferrer">See More</a>
-        </div>
-        <div className="event-box">
-          <h3>Start-up Pitch Competition</h3>
-          <p>May 15, 2024</p>
-          <p>Students pitch their innovative start-up ideas to investors and industry experts.</p>
-          <a href="https://example.com" target="_blank" rel="noopener noreferrer">See More</a>
-        </div>
+        
       </div>
     </div>
   );
